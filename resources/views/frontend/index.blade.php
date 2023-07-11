@@ -23,7 +23,7 @@
                 <div class="banner_content">
 
                     <div class="countDown_part">
-                        @if($home[1]->status == true)
+                        @if(@$home[1]->status == true)
                             <div id="countdown" data-time={{ home_content('countdown') }}>
                                 <ul>
                                 <li><span id="days"></span>days</li>
@@ -164,8 +164,8 @@
 
                 <div class="WhatYouGetContent">
 
-                    <h4>WHAT YOU WILL GET WITH THE</h4>
-                    <h2>REGISTRATION</h2>
+                    <h4>{{@$registrationTitle->sub_title}}</h4>
+                    <h2>{{@$registrationTitle->title}}</h2>
 
                     <ul>
 
@@ -208,8 +208,8 @@
 
                 <div class="header text-center">
 
-                    <h4>SIX GROUPS FOR</h4>
-                    <h2>SIX CATEGORIES</h2>
+                    <h4>{{@$categoryTitle->sub_title}}</h4>
+                    <h2>{{@$categoryTitle->title}}</h2>
 
                 </div>
 
@@ -319,8 +319,8 @@
 
                 <div class="header text-center">
 
-                    <h4>THERE WILL BE</h4>
-                    <h2>10 SEGMENTS</h2>
+                    <h4>{{@$segmentsTitle->sub_title}}</h4>
+                    <h2>{{@$segmentsTitle->title}}</h2>
 
                 </div>
 
@@ -495,6 +495,10 @@
 
 </section>
 
+{{-- <section data-aos="fade-up" data-aos-duration="1000">
+    
+</section> --}}
+
 <!-- ---------------------------------------------------------------------------------------------------------------------------------------------------
     START RoadMap PART
 ---------------------------------------------------------------------------------------------------------------------------------------------------  -->
@@ -542,7 +546,7 @@
 <!-- ---------------------------------------------------------------------------------------------------------------------------------------------------
     START Advisore PART
 ---------------------------------------------------------------------------------------------------------------------------------------------------  -->
-<section id="Advisore" data-aos="fade-up" data-aos-duration="1000">
+{{-- <section id="Advisore" data-aos="fade-up" data-aos-duration="1000">
 
     <div class="container">
 
@@ -620,7 +624,7 @@
 
     </div>
 
-</section>
+</section> --}}
 
 
 

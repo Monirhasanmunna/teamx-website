@@ -46,7 +46,7 @@
                                     <div class="col-lg-2 col-3">
                                         <div class="form-group">
                                             <label class="form-label">Status</label>
-                                            <input type="checkbox" {{$home_pages[1]->status == true ? 'checked' : ''}} name="status" value="1" data-toggle="toggle" data-style="ios">
+                                            <input type="checkbox" {{@$home_pages[1]->status == true ? 'checked' : ''}} name="status" value="1" data-toggle="toggle" data-style="ios">
                                         </div>
                                     </div>
                                 </div>

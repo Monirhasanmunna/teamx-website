@@ -15,6 +15,7 @@ use App\Models\Gallery;
 use App\Models\AboutKeyObjective;
 use App\Models\Faq;
 use App\Models\Home;
+use App\Models\SectionTitle;
 
 class FrontEndController extends Controller
 {
@@ -22,13 +23,19 @@ class FrontEndController extends Controller
     public function index()
     {   
         $home = Home::all();
+        
+        $registrationTitle = SectionTitle::where('section','registration')->first();
+        $categoryTitle = SectionTitle::where('section','six categories')->first();
+        $segmentsTitle = SectionTitle::where('section','segments')->first();
+        $teacherListTitle = SectionTitle::where('section','teacher list')->first();
+
         $best_partners = BestPartner::all();
         $gallerys_items = Gallery::take(6)->latest()->get();
         $what_you_gets = WhatYouWillGet::all();
         $ten_segments = TenSegment::latest()->get();
         $advisors = Advisor::take(10)->latest()->get(); 
         $why_ans = WhyAn::all(); 
-        return view('frontend.index', compact('best_partners', 'what_you_gets', 'ten_segments', 'why_ans', 'advisors', 'gallerys_items','home'));
+        return view('frontend.index', compact('best_partners', 'what_you_gets', 'ten_segments', 'why_ans', 'advisors', 'gallerys_items','home','registrationTitle','categoryTitle','segmentsTitle','teacherListTitle'));
 
     }
 
