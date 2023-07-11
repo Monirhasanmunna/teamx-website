@@ -1,0 +1,1514 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ol,
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+    margin: 0;
+    padding: 0;
+}
+
+.form-control:focus {
+    box-shadow: none;
+}
+
+input:focus {
+    box-shadow: none;
+    outline: unset;
+}
+
+textarea:focus {
+    box-shadow: none;
+    outline: unset;
+}
+
+select:focus {
+    box-shadow: none;
+}
+
+body {
+    /* font-family: 'Lato', sans-serif !important; */
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.overflow{
+    overflow: hidden;
+}
+
+.RegistrationPages {
+    background: var(--bg_color);
+    position: fixed;
+    top: 50%;
+    right: -50px;
+    transform: rotate(-90deg);
+    display: inline-block;
+    z-index: 9999;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.RegistrationPages a{
+    color: var(--wht);
+    padding: 10px 20px;
+    margin-top: 0;
+    font-weight: 500;
+}
+
+.logo img {
+    height: 65px;
+}
+ 
+
+/* =============== COMMON CSS FOR WEB SITE =============== */
+:root {
+    /* --bg_color: #0071DC; */
+    --bg_color: #FF6600 ;
+    --bg_color2: #4D73E6 ;
+    --text_color: #666 ;
+    --wht: #fff;
+}
+
+h1 {
+    font-size: 55px;
+    line-height: 75px;
+    color: var(--wht);
+    font-weight: 700;
+    margin-top: 0px;
+}
+
+h1 span{
+    font-weight: 300;
+}
+
+h2 {
+    font-size: 40px;
+    line-height: 55px;
+    font-weight: 700;
+    font-family: 'Secular One', sans-serif;
+    color: var(--bg_color2);
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 30px;
+    color: var(--bg_color2);
+}
+
+h4{
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--bg_color);
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-top: 15px;
+    color: var(--text_color);
+}
+
+a {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+    color: var(--text_color);
+    transition: all linear .2s;
+    display: inline-block;
+}
+       
+a.bg, button.bg {
+    background-image: linear-gradient(to right, #FF6600 0%, #161583  51%, #FF6600  100%);
+    padding: 15px 40px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: var(--wht);            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 30px;
+    font-weight: 700;
+}
+
+a.bg:hover, button.bg:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+ 
+
+.d_flex {
+    display: flex;
+    align-items: center;
+}
+
+.d_justify {
+    justify-content: space-between;
+}
+
+input {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.section_gaps {
+    padding-top: 100px;
+}
+
+.box_shadow {
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.28);
+}
+
+input{
+    font-size: 16px;
+    color: var(--text_color);
+    width: 100%;
+}
+
+label{
+    font-size: 16px;
+    color: var(--text_color);
+}
+
+textarea, select{
+    font-size: 16px;
+    color: var(--text_color);
+    width: 100%;
+}
+
+button{
+    border: none;
+}
+
+
+/* Per Loader */
+.preloader{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #1C263C;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Back to top */
+.go-top {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    display: none;
+    cursor: pointer;
+    -webkit-font-smoothing: antialiased;
+    background: var(--bg_color);
+    border-radius: 5px;
+    color: var(--wht);
+    z-index: 99;
+}
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START navbar PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+.Mobile_menu{
+    display: none;
+    text-align: right;
+}
+
+.Mobile_menu button{
+    background: none;
+    border: none;
+}
+
+.Mobile_menu button img{
+    height: 40px;
+}
+
+.navbar {
+    height: 90px;
+    padding: 0;
+    position: fixed;
+    width: 100%;    
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background: #0000;
+}
+
+.navbar .row{
+    width: 100%;
+}
+
+.navbar.sticky{
+    background: rgb(0 0 0 / 90%);
+}
+
+.navbar .container {
+    position: relative;
+}
+
+.navbar .navbar-brand {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-right: 0;
+}
+
+.navbar .navbar-brand img {
+    width: 90%;
+}
+
+.navbar .nav-item {
+    margin: 0 15px;
+}
+
+.navbar .nav-item:last-child{
+    margin-right: 0;
+}
+
+.navbar .nav-item .nav-link {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: var(--wht);
+    padding: 0;
+    height: 100%;
+    line-height: 90px;
+    height: 90px;
+}
+
+.navbar .nav-item .nav-link.active {
+    color: var(--bg_color);
+    font-weight: 600;
+}
+
+.navbar .nav-item .nav-link:hover {
+    color: var(--bg_color);
+}
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START Banner PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+#Banner {
+    position: relative;
+    min-height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#Banner .banner_img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#Banner .banner_img img{
+    width: 100%;
+    height: 100%;
+}
+
+/* #Banner::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .70);
+} */
+
+.banner_content{
+    text-align: center;
+    position: relative;
+    z-index: 9;
+}
+
+.banner_content h3, .banner_content p{
+    color: var(--wht);
+}
+
+/* Count Down */
+
+.countDown_part {
+    margin-bottom: 25px;
+}
+
+.banner_content li {
+    display: inline-block;
+    font-size: 20px;
+    list-style-type: none;
+    padding: 10px 30px;
+    background: var(--bg_color);
+    text-transform: uppercase;
+    color: var(--wht);
+    margin: 0 10px;
+    border-radius: 5px;
+}
+  
+.banner_content li span {
+    display: block;
+    font-size: 50px;
+    line-height: 60px;
+    font-family: 'Secular One', sans-serif;
+  }
+  
+.banner_content .emoji {
+    display: none;
+    padding: 1rem;
+}
+  
+.banner_content .emoji span {
+    font-size: 4rem;
+    padding: 0 .5rem;
+}
+
+.banner_content h2 {
+    color: var(--wht);
+    margin-bottom: 10px;
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 40px;
+}
+
+.banner_content p {
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 5px;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START About PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+.AboutLeft{
+    margin-right: 50px;
+}
+
+.AboutRightItem{
+    padding: 30px;
+    text-align: center;
+    background: var(--bg_color);
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.AboutRightItem.bg1{
+    background: #4D73E6;
+}
+
+.AboutRightItem.bg2{
+    background: #5F4787;
+}
+
+.AboutRightItem.bg3{
+    background: #EE4D6A;
+}
+
+.AboutRightItem.bg4{
+    background: #6D76A6;
+}
+
+.AboutRightItem h3{
+    font-weight: 700;
+    font-size: 40px;
+    color: var(--wht);
+}
+
+.AboutRightItem p{
+    color: var(--wht);
+    font-size: 18px;
+    margin-top: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START WhatYouGet PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+#WhatYouGet{
+    background: url('../images/what_you_get_bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0;
+}
+
+.WhatYouGetContent{
+    margin-right: 50px;
+}
+
+.WhatYouGetContent h2{
+    color: var(--wht);
+}
+
+.WhatYouGetContent ul{
+    margin-top: 30px;
+}
+
+.WhatYouGetContent ul li{
+    color: var(--wht);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 10px;
+    padding-left: 30px;
+    position: relative;
+}
+
+.WhatYouGetContent ul li::after{
+    position: absolute;
+    content: '';
+    top: 10px;
+    left: 0;
+    width:10px;
+    height:10px;
+    border-radius: 50%;
+    background: var(--bg_color);
+}
+
+.WhatYouGetImg img{
+    width: 100%;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START SixGroup PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+#SixGroup{
+    background: #e6e6e6;
+    padding: 100px 0;
+}
+
+.SixGroupContent{
+    margin-top: 50px;
+}
+
+.SixGroupContent .desktop{
+    display: block;
+}
+
+.SixGroupContent .Mobile{
+    display: none;
+}
+
+.SixGroupLeft{
+    text-align: right;
+    margin-right: 30px;
+    padding-top: 35px;
+    padding-bottom: 70px;
+}
+
+.SixGroupLeft.Right{
+    text-align: left;
+    margin-left: 30px;
+}
+
+.SixGroupLeft h3{
+    font-size: 20px;
+}
+
+.SixGroupLeft h5{
+    margin-top: 10px;
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--bg_color);
+}
+
+.SixGroupLeft p{
+    margin-top: 10px;
+}
+
+.SixGroupMiddle img{
+    width: 100%;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START TenSegment PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+#TenSegment{
+    position: relative;
+}
+
+#TenSegment .left_bg{
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#TenSegment .right_bg{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.TenSegmentSlider{
+    margin-top: 50px;
+}
+
+.TenSegmentItem img{
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.TenSegmentItem {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: #FFF;
+}
+
+.TenSegmentItem .text {
+    padding: 30px;
+    min-height: 260px;
+}
+
+.owl-dots {
+    text-align: center;
+    margin-top: 20px;   
+}
+
+.owl-dots button{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--text_color) !important;
+    margin: 0 5px;
+    transition: all linear .3s;
+}
+
+button.owl-dot.active{
+    width: 15px;
+    height: 15px;
+    background: var(--bg_color) !important;
+}
+
+.ourConcern .TenSegmentItem{
+    margin-bottom: 30px;
+}
+
+.ourConcern .owl-stage-outer{
+    padding: 0 1px;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START Round PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+#Round{
+    background: url('../images/round-bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0;
+    position: relative;
+}
+
+#Round:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+#Round h2{
+    color: var(--wht);
+}
+
+#Round h4{
+    color: var(--wht);
+}
+
+#Round .container{
+    position: relative;
+    z-index: 1;
+}
+
+.RoundContent {
+    margin-top: 50px;
+}
+
+.RoundContentItem{
+    margin-bottom: 50px;
+} 
+
+.RoundContentItem .img{
+    position: relative;
+    width: 30%;
+    margin-right: 50px;
+}
+
+.RoundContentItem .img img{
+    width: 100%;
+}
+
+.RoundContentItem .img .overlay{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.RoundContentItem .img h5{
+    font-size: 20px;
+    color: var(--wht);
+}
+
+.RoundContentItem .img h6{
+    font-size: 50px;
+    font-weight: 700;
+    font-family: 'Secular One', sans-serif;
+    color: var(--wht);
+    margin-top: 5px;  
+}
+
+.RoundContentItem .text h3{
+    color: var(--wht);
+}
+
+.RoundContentItem .text p{
+    color: var(--wht);
+    margin-top: 10px;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START RoadMap PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+#RoadMap{
+    position: relative;
+    padding: 100px 0;
+}
+
+#RoadMap::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../images/roadmap.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .1;
+}
+
+#RoadMap .container{
+    position: relative;
+    z-index: 9;
+}
+
+.RoadMapImg{
+    margin-top: 50px;
+}
+
+.RoadMapImg img{
+    width: 100%;
+}
+
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START Advisore PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+.AdvisoreContentFlex{
+    flex-wrap: wrap;
+}
+
+.AdvisoreContent{
+    margin-top: 50px;
+}
+
+.AdvisoreItem{
+    width: 18.5%;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.AdvisoreItem img {
+    width: 100%;
+    height: 250px;
+    object-fit: fill;
+}
+
+
+
+.AdvisoreItem .overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 0;
+    background: rgba(77, 115, 230,0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    opacity: 0;
+    transition: all linear .3s;
+}
+
+.AdvisoreItem .overlay h5{
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--wht);
+}
+
+.AdvisoreItem .overlay p{
+    color: var(--wht);
+    margin-top: 5px;
+    line-height: 20px;
+    padding: 0 20px;
+}
+
+.SocialIcon{
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.SocialIcon a{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: var(--wht);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--bg_color);
+    margin: 0 5px;
+}
+
+.SocialIcon a:hover{
+    color: var(--bg_color2);
+}
+
+.AdvisoreItem:hover .overlay{
+    opacity: 1;
+    height: 100%;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START WhyAn PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+#WhyAn{
+    background: #e6e6e6;
+    padding: 100px 0;
+    padding-top: 180px;
+}
+
+.WhyAnLeft{
+    margin-left: 20px;
+}
+
+.WhyAnItem{
+    padding: 30px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.WhyAnItem.Total{
+    background: var(--bg_color);
+    text-align: center;
+}
+
+.TwoPart{
+    margin-top: 20px;
+}
+
+.WhyAnItem.Reach{
+    background: #6D76A6;
+    text-align: center;
+    width: 48%;
+}
+
+.WhyAnItem.Registration{
+    background: #EE4D6A;
+    text-align: center;
+    width: 48%;
+}
+
+.WhyAnItem.Total h4, .WhyAnItem.Registration h4, .WhyAnItem.Reach h4{
+    margin-top: 10px;
+}
+
+.WhyAnItem.ImgPart {
+    background: var(--bg_color2);
+    text-align: left;
+    padding-bottom: 40px;
+}
+
+.WhyAnItem.ImgPart::after {
+    position: absolute;
+    content: '';
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 35px;
+    background: #e6e6e6;
+    border-radius: 20px;
+}
+
+.WhyAnItem.ImgPart .img {
+    position: absolute;
+    right: 0;
+    bottom: 19%;
+    display: none;
+}
+
+.WhyAnItem.ImgPart .img img {
+    height: 200px;
+}
+
+.WhyAnItem h3{
+    font-size: 30px;
+    line-height: 30px;
+    color: var(--wht);
+    font-weight: 400;
+}
+
+.WhyAnItem h4 {
+    color: var(--wht);
+    font-size: 17px;
+    margin-top: 8px;
+    letter-spacing: 1px;
+    padding: 0;
+    margin: 0;
+    padding-top: 5px;
+}
+
+.WhyAnRight{
+    margin-right: 20px;
+}
+
+.WhyAntabs{
+    margin-top: 30px;
+}
+
+.WhyAntabs h2{
+    line-height: unset;
+}
+
+.WhyAntabs button{
+    padding: 10px 20px;
+}
+
+.accordion-button:not(.collapsed){
+    background: rgba(77, 115, 230, 0.6);
+    color: var(--wht);
+}
+
+.WhyAntabs button:focus{
+    outline: none;
+    border-color: unset;
+    box-shadow: none;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START OurPartnar PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+.OurPartnarContent{
+    margin-top: 50px;
+}
+
+.OurPartnarItem {
+    border-radius: 20px;
+    box-shadow: 0 0 5px 2px #e6e6e6;
+    text-align: center;
+    padding: 20px;
+}
+
+.OurPartnarItem img {
+    height: 100px;
+    width: 70%;
+    object-fit: fill;
+}
+
+.OurPartnarContent .owl-stage {
+    padding: 30px 0;
+}
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START Footer PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+#Footer {
+    padding-top: 200px;
+    position: relative;
+    height: 575px;
+}
+
+#Footer .Footer_img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+
+#Footer .Footer_img img{
+    width: 100%;
+    height: 100%;
+}
+
+#Footer p {
+    color: #ddd;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+#Footer .container{
+    position: relative;
+}
+
+#Footer .SocialIcon{
+    justify-content: flex-start;
+    margin-top: 30px;
+}
+
+#Footer .SocialIcon a{
+    margin: 0;
+    margin-right: 20px;
+}
+
+.FooterItem h3{
+    color: #ddd;
+}
+
+.FooterItem ul{
+    margin-top: 30px;
+}
+
+.FooterItem ul li{
+    color: #ddd;
+    margin-bottom: 10px;
+}
+
+.FooterItem ul li span{
+    display: block;
+    margin-right: 20px;
+    font-size: 24px;
+}
+
+.FooterItem ul a{
+    color: #ddd;
+}
+
+.FooterItem ul a:hover{
+    color: var(--bg_color);
+}
+
+.FooterGallery{
+    margin-top: 30px;
+}
+
+.FooterGallery .img{
+    margin-bottom: 15px;
+}
+
+.FooterGallery img {
+    border-radius: 10px;
+    width: 100%;
+    height: 90px;
+    object-fit: fill;
+}
+
+#Footer .SupportHotline p{
+    font-size: 20px;
+    font-weight: 600;
+    margin-top:20px;
+    text-align: center;
+}
+
+#Footer .SupportHotline p a{
+    color: var(--bg_color);
+    font-size: 20px;
+}
+
+#TinyFooter {
+    background: rgb(51, 51, 51);
+    padding: 20px 0px;
+}
+
+#TinyFooter p{
+    color: #ddd;
+}
+
+#TinyFooter p a{
+    color: #ddd;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START About Us Pages PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+#OtherBanner {
+    position: relative;
+    height: 400px;
+    padding-bottom: 200px;
+}
+
+.about_img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%
+}
+
+.about_img img{
+    width: 100%;
+    height: 100%
+}
+
+.OtherBannerContent{
+    position: relative;
+    padding: 150px 0;
+}
+
+.OtherBannerContent h1 {
+    font-family: 'Secular One', sans-serif;
+    text-transform: uppercase;
+}
+
+/* About us */
+
+.AboutPagesContent{
+    margin-right: 50px;
+}
+
+.AboutPagesImg .img{
+    position: relative;
+}
+
+.AboutPagesImg .img .overlay{
+    position: absolute;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    background: #EE4D6A;
+    bottom: 0;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.AboutPagesImg .img .overlay h5{
+    font-size: 20px;
+    color: var(--wht);
+    font-weight: 700;
+}
+
+.AboutPagesImg .img .overlay h2{
+    color: var(--wht);
+    margin-top: 10px;
+}
+
+.AboutPagesImg img {
+    width: 100%;
+    border-radius: 20px;
+    height: 500px;
+    object-fit: fill;
+}
+
+.AboutPagesImg  a.bg{
+    width: 100%;
+}
+
+/* MissionVission */
+
+#MissionVission{
+    background: #e6e6e6;
+    padding: 100px 0;
+}
+
+.MissionVissionLeftContent .img img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.MissionVissionLeftContent .text{
+    margin-top: 30px;
+}
+
+.MissionVissionLeftContent .text p{
+    font-size: 14px;
+}
+
+.MissionVissionRight{
+    margin-left: 50px;
+}
+
+.MissionVissionItem{
+    margin-top: 20px;
+}
+
+.MissionVissionItem h5{
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--text_color);
+}
+
+.MissionVissionItem p{
+    margin-top: 5px;
+}
+
+/* KeyObject */
+.KeyObjectContent ul{
+    margin-top: 20px;
+}
+
+.KeyObjectContent ul li{
+    padding-left: 30px;
+    position: relative;
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--text_color);
+}
+
+.KeyObjectContent ul li::after{
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 8px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--bg_color);
+}
+
+.KeyObjectVideo iframe{
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* PoingFocus */
+
+.PoingFocusContent{
+    margin-top: 80px;
+}
+
+.PoingFocusItem{
+    border: thin solid rgba(0,0,0,.12);
+    background: #FFF;
+    padding: 30px;
+    border-radius: 10px;
+    transition: all linear .3s;
+    text-align: center;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 60px;
+}
+
+
+.PoingFocusItem:hover{
+    transform: translateY(-5px);
+}
+
+.PoingFocusItem .Circle{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: var(--bg_color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.PoingFocusItem.secnd .Circle{
+    background: #4D73E6;
+}
+
+.PoingFocusItem.third .Circle{
+    background: #EE4D6A;
+}
+
+.PoingFocusItem .Circle span{
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--wht);
+}
+
+/*  */
+
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START Team Pages PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+.TeamContent{
+    margin-top: 50px;
+}
+
+.TeamContent select{
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+}
+
+.selectItem{
+    margin-bottom: 30px;
+}
+
+.selectItem .customeInout{
+    width: 40%;
+    margin-right: 50px;
+}
+
+.TeamItem{
+    box-shadow: 0 3px 1px -2px rgba(0,0,0,.2),0 2px 2px 0 rgba(0,0,0,.14),0 1px 5px 0 rgba(0,0,0,.12);
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.TeamItem table{
+    margin-top: 10px;
+}
+
+.TeamItem h3{
+    color: var(--bg_color);
+}
+
+.TeamItem table th{
+    font-size: 16px;
+    color: var(--bg_color2);
+    font-weight: 700;
+}
+
+.TeamItem table td{
+    color: var(--text_color);
+    font-size: 16px;
+}
+
+.TeamItem table td.Reset{
+    border-bottom: none;
+    text-align: center;
+}
+
+.TeamMamberContent{
+    margin-top: 50px;
+}
+
+.TeamMamberTabsContent{
+    margin-top: 50px;
+}
+
+.TeamTabsItem {
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 20px;
+    background: #ddd;
+    border-radius: 10px;
+}
+
+.TeamTabsItem img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: fill;
+}
+
+.TeamTabsItem .text{
+    margin-top: 20px;
+}
+
+.TeamTabsItem .text p {
+    margin-top: 5px;
+    min-height: 50px;
+}
+
+.nav-pills .nav-link {
+    border: 1px solid #ddd;
+    margin-right: 15px;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START Gallery PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+.GalleryContent{
+    margin-top: 50px;
+}
+
+.GalleryImg{
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.GalleryImg img {
+    width: 100%;
+    height: 250px;
+    object-fit: fill;
+}
+
+.GalleryImg .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    background: rgba(77, 115, 230,0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all linear .4s;
+    opacity: 0;
+}
+
+.GalleryImg .overlay a{
+    color: var(--wht);
+    font-size: 30px;
+}
+
+.GalleryImg:hover .overlay{
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START FAQ PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+.FaqContent{
+    margin-top: 50px;
+}
+
+.FaqContent .WhyAntabs{
+    margin-top: 0;
+}
+
+.custome_input{
+    margin-top: 20px;
+}
+
+.ContactConent{
+    margin-top: 50px;
+}
+
+.custome_input input, .custome_input textarea{
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid #DDD;
+}
+
+.ContactAddress ul li{
+    margin-bottom: 20px;
+}
+
+.ContactAddress .svg{
+    background: var(--bg_color2);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: var(--wht);
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.ContactAddress .text{
+    width: 85%;
+}
+
+.ContactAddress h6{
+    font-weight: 700;
+    color: var(--text_color);
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.ContactAddress p{
+    margin-top: 0;
+    line-height: 20px;
+}
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START  PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START  PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START  PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START  PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START  PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START  PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START  PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+
